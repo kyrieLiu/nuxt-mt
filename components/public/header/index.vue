@@ -8,16 +8,20 @@
     <el-col :span="6">
       <geo />
     </el-col>
-    <el-col :span="6" />
+    <el-col :span="6">
+      <user/>
+    </el-col>
     <el-col :span="6" />
   </el-row>
 </template>
 
 <script>
 import geo from './geo'
+import user from './user'
 export default {
   components: {
-    geo
+    geo,
+    user
   },
   data () {
     return {}
