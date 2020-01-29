@@ -1,35 +1,26 @@
-<!--
-   User: Liu Yin
-   Date: 2020/1/28
-   Description:
- -->
 <template>
-  <el-row :gutter="15" class="m-header">
-    <el-col :span="6">
-      <geo />
-    </el-col>
-    <el-col :span="6">
-      <user/>
-    </el-col>
-    <el-col :span="6" />
-  </el-row>
+  <div class="m-header">
+    <el-row>
+      <el-col>
+        <top-bar />
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col>
+      </el-col>
+    </el-row>
+  </div>
 </template>
 
 <script>
-import geo from './geo'
-import user from './user'
+import topBar from './topbar.vue'
 export default {
   components: {
-    geo,
-    user
-  },
-  data () {
-    return {}
-  },
-  methods: {}
+    topBar
+  }
 }
 </script>
 
-<style lang="scss" scoped>
-  @import "@/assets/css/public/layout.scss";
+<style lang="scss">
+  @import "@/assets/css/public/header/index.scss";
 </style>
